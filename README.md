@@ -42,6 +42,7 @@ As of right now, it will utilize compatibility with ``.wav`` files and it will a
 Also as of right now, it will be programmed in such a way that it serves as a watchdog on your system. You will need to open .kso files directly in the player, which is an application. 
 
 ### The best way for me to describe a .kso file's format is Sprunki, or Incredibox.
+Basically, the instruments are pre-loaded and the data itself is loaded afterwards. 000, 0000, etc, means that the instrument is off, and if it's anything else, it will simply play that such value.
 Every ``.kso`` file consists of the following bytes: ``kso!H``, ``!I``, ``!C``, and ``!K``. These could be in their abbreviated form, or in their long form, ``!Header``, ``!Information``, ``!Chart``, and ``!Kill``.
 
 * ``!Header`` is the header of text and other stuff, basic metadata before ``!Information`` needs to load.
