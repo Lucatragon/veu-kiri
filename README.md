@@ -1,162 +1,69 @@
-----------------------------------------------------------------------------------
-## ARTZENCRAFT GENERALIZED LICENSE (AZGLv1)
-#### Version 1.1 (Sept 2026)
-> The following LICENSE updated 25 Sept 2026 UTC | The current README updated sameday
-----------------------------------------------------------------------------------
-PREAMBLE
-----------------------------------------------------------------------------------
-This Artzencraft Generalized License ("AZGLv1") is established to foster a shared,
-open environmental space for software and media. Materials licensed under the 
-AZGLv1 are expressly designated as Public Learning Material. This license grants 
-extensive freedoms to modify, decompile, and remix works, provided that the 
-licensee complies with strict accessibility requirements and trademark 
-limitations defined below.
+Introducing **Veu Kiri**, my little project for a while.
+
+Veu Kiri is a special program licensed under **VFL2**. 
+
+Right now, this Readme looks a bit bland, yes I know I gotta fix that.
+
+However, I can't write Readme's to save my life, so XD
+
+Anywhos. 
+
+WHAT IS VEU KIRI?
+----------------------------------------------------------
+Veu Kiri is a special little program that I am making for three reasons.
+1. I want to.
+2. I would like a way to make audio smaller (under the guise that I might not be able to do much other than prove "quality versus quantity"), and
+3. I feel like OGG, MP3, WAV, etc etc are super bloated and unneccessary for true day-to-day listening. Yes - even Opus and Vorbis. I remember when assetys used to be incredibly small, I remember when my dad showed me a videogame that was 96 KB on disk (.kkrieger) and being astonished that my daily-driven SSD to hell and back could probably load 1 700 copies of this game ***in RAM***.
+
+And so I thought, "what the hell?" Why are games so big now? Note: Minecraft Java Edition thanks to Microslop™️ has recommended specifications of 16 GB of RAM ***itself*** and an Intel Core i5 12th Gen. That means my daily-driver laptop's CPU alone isn't up to specifications. 
+
+*"Oh, well I'm playing it on [whatever fucking hardware you have] and I'm not getting lag!~"* Yeah sure, you might not be... but even if you aren't actually getting any lag at that hardware... those minimum and recommended specifications for a 3 dimensional block sandbox game with dirt blocks that are ***4096 cubic pixels in size,*** *are* ***fucking ridiculous*** regardless of what they are, compared to a first person shooter that is as big as a player's average save file in most post-2014 indie games, that also has enemies, ammunition collection, ACTUAL AUDIO, for hell's sake. 
 
 
-SECTION 1: DEFINITIONS
-----------------------------------------------------------------------------------
-As used in this License, the following terms have the specific meanings:
+### I've wanted to see a change for a long while now, and there hasn't been one. So I'm making one, and that's where Kiri comes in.
 
-* "Licensor" (referred to as "WE" or "US") means Artzencraft, the original 
-  creator and author of the Software/Media and this License.
-* "Licensee" (referred to as "YOU") means any individual, machine, or entity 
-  exercising rights under this License.
-* "Software" or "Media" means any software, code, artwork, compiler, or digital 
-  asset distributed under the terms of this License.
-* "Device" means any hardware unit, computer, or system capable of executing, 
-  displaying, or utilizing the Software or Media.
-* "Remix" means to modify, tamper with, recreate, re-source, decompile, decode, 
-  decrypt, or adapt the Software or Media into a derivative work.
-* "Contact" means the official channel for communication regarding this license, 
-  located via the GitHub link below:
-      https://github.com/Lucatragon/message/blob/main/contacts.txt
-* "AZGLv1" means "the latest version of AZGLv1.x", it is and should be referred to
-  as shorthanded text, and further AZGL versions such as say, V6 or V17, will have
-  or should have this same definition: "the latest version of 
-  AZGLv[current version].x"
+And I'm starting with audio.
 
+Kiri in and of itself is my take at what audio could be. It uses structural analysis using local tools and drivers on your computer and CPU formulas to work virtually seamlessly, streaming assets of songs directly into RAM and using the rest of the song as a time-based grid-based execution array. This means that audio files that use the same instruments but are different in structure and form could be virtually 20% different in file size, at a maximum. This also means that a pure-white noise and sine wave "432 Hz meditation music" track that is 60 minutes long, could use less bytes of both RAM and storage, than Bloody Mary by Lady Gaga. The event data itself could be 3x less than an actual song, if not more, regardless of the fact that 60 minutes is about 16 times longer than Bloody Mary.
 
-SECTION 2: WARRANTY DISCLAIMER AND LIMITATION OF LIABILITY
-----------------------------------------------------------------------------------
-2.1 DISCLOSURE OF VOLUNTARY USE. YOU, the Licensee, fully acknowledge and 
-understand that downloading, installing, updating, or using this Software is 
-entirely voluntary. The Software is not forced upon you. You assume complete 
-responsibility for its deployment and use on any Device whatsoever.
+Could. I keep using that word, because Kiri is not finished yet. 
 
-2.2 DISCLAIMER OF WARRANTY. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
-ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-WORKING CONDITION, FUNCTIONALITY, EXPRESSIVITY, OR PERFORMANCE COMMON TO 
-STANDARDIZED PRODUCTS. 
+Then, I'll start on the actual programming itself, changing the way programming is even defined in the dictionary, because it's high time we have ease of access built into our programs where 9 times out of 10 the one looking at your code has no idea what they are looking at.
 
-2.3 LIMITATION OF LIABILITY. IN NO EVENT SHALL THE LICENSOR OR AUTHORS BE HELD 
-LIABLE FOR ANY CLAIM, DAMAGES, LOSSES, OR OTHER LIABILITY, WHETHER IN AN ACTION 
-OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE 
-SOFTWARE, MEDIA, OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Kiri itself is just the audio. But, the audio *what*?
+* The audio stack
+* The audio driver itself (soon)
+* The entire system that makes sound itself possible to computers and digital machinery.
 
+I will be utilizing ALSA for the Linux version, WASAPI for the Windows version, and CoreAudio for the Macintosh version.
 
-SECTION 3: PUBLIC LEARNING MATERIAL & USAGE RIGHTS
-----------------------------------------------------------------------------------
-3.1 Target Audience. This Software and Media may be utilized by anyone. It is 
-explicitly structured to be accessible to a diverse consumer base, including but 
-not limited to students, teachers, agents, professors, hobbyists, artificial 
-intelligence models, and machine interpreters.
+As of right now, it will utilize WAV compatibility and it will also utilize Ruby as a language. The frontend will be coded in Ruby, the backend will be later coded in C. Formatting a .kso (Kiri Sound Output) file will come later in this Readme.
 
-3.2 Grant of Rights. Licensees are permitted and encouraged to remix, tamper 
-with, recreate, re-source, decompile, decode, or decrypt the Software and Media. 
+Also as of right now, it will be programmed in such a way that it serves as a watchdog on your system. You will need to open .kso files directly in the player, which is an application. 
 
-3.3 Ownership of Remixed Works. If you create a Remix (including but not limited 
-to compilers or imaging software), the resulting work is legally considered 
-authored by YOU alone. This License does not attach to or force itself upon your 
-past, present, or future derivative works. You claim exclusive authorship over 
-your reworked version, and you are not required to include this License in your 
-redistributed Remix, although it is fully permitted to do so.
+### The best way for me to describe a .kso file's format is Sprunki, or Incredibox.
+Every .kso file consists of the following bytes: kso!H, !I, !C, and !K. These could be in their abbreviated form, or in their long form, !Header, !Information, !Chart, and !Kill. 
 
+Here's an example file:
 
-SECTION 4: ACCESS RESTRICTIONS AND MANDATORY FREEDOMS
-----------------------------------------------------------------------------------
-4.1 Zero Restriction Policy. Any Software or Media distributed under the AZGLv1 
-must remain entirely free of access barriers. You shall not place the Media behind 
-paywalls, ad-walls, registration prompts, or any other limitations. 
+```
+kso!Header
+    Lady Gaga | Bloody Mary | 00000000
+!Information
+    Instrument Clarinet : 0007A6A6A7E8F88E777BE0787D6897DFEBDFED98DD0D7F7EE0F0D7E80D7D... : wC
+    Instrument Flute    : 00AAFE85DD93AA210E34665A68BE716E9D00FEDE6A7A88D99E77765F441B... : wF
+    Factor 4, Section 4, Speed 120, Offset 200
+    F1 wC, F2 wF, F3 wC, F4 wF
+    F1 bb 3, 000 fff
+!Chart
+    000------------ 1e3 1e3 1d9 1d9 1c2 1c2 1c6 1c9 1e3 1e3 1d9 1f3 2a1 1f3 1e6 1e3 1d5 1d5 1d4 1e7 
+    000-------------------------------------------- 1d3---- 1d3---- 1e9------------ 1d3---- 1d3---- 
+    0a9 0a9 0b3 0b3 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- 
+    000--------------------------------------------------------------------------------------------
 
-4.2 Platform Compliance. Hosting platforms that enforce anti-spam cooldowns, 
-mandatory delays, or download restrictions (such as SourceForge) fail the 
-good-faith requirements of this License and shall not host AZGLv1 materials. 
-
-4.3 Exceptions for Web Infrastructures. A narrow exception is granted for 
-platforms such as social media, web search engines, proprietary websites, or 
-integrated digital networks, where the material inherently cannot be accessed 
-outside of that specific network environment.
-
-
-SECTION 5: TRADEMARK, INTELLECTUAL PROPERTY, AND NAMING RULES
-----------------------------------------------------------------------------------
-If you modify the Software, Media, or this License, you must comply with the 
-following strict naming conventions to protect the Licensor's identity:
-
-5.1 License Naming. If you adapt, remix, or copy this License document for your 
-own works, you must rename the license so it shares no namesake with the AZGLv1. 
-You must remove "Artzencraft" and the letters "AZ" from the title and acronym, 
-replacing them with your own brand name or acronym, unless the license is to be
-kept and remain unchanged.
-
-5.1b Verbatim. This means, that if the license is meant to be kept, unchanged, and
-the assets themselves also unchanged, the logos unchanged, the code unchanged.. you
-may use Artzencraft, Artzenith, or any of the branding names we at AZCZA have, or I,
-Lucatragon on Github, have, provided it is relevant to the source. (Example: A game
-engine can still be named a game engine or be simplified into "engine", but it cannot
-suddenly become the license. That is reserved for the AZGLv1 and its future partings.
-
-5.2 Prohibited Project Names. Your modified or remixed project must not use or 
-imply connection to the Artzencraft intellectual property if otherwise. Prohibited 
-names include, but are not limited to:
-  * Artzencraft
-  * AZC
-  * Arts and Craft
-  * Artzenith
-
-5.3 Permitted Critique Names. You are explicitly permitted to reference the 
-original brand name if your project title is structured as a critique or review. 
-Permitted naming conventions include, but are not limited to:
-  * Artzencraft Destroyer
-  * Artzencraft Sucks
-
-SECTION 6: INTENTION, AND VALUE, SUMMARY AND THE INFORMAL
-----------------------------------------------------------------------------------
-6.1 Free Reign. You are permitted to do virtually whatever you wish to this software
-provided you follow the rules and stay in the scope of AZGL. 
-
-6.2 Licensing Conditions. AZGL is based on the sole belief that media should be open
-to the public and be classified as technical learning material. Therefore, declaration
-is required when applying the AZGL license family.
-
-6.3 Declaration. See [Section 3]() for more details, however this is a more official 
-"what happens" when media is licensed AZGL.
-
-6.3a. Media licensed under AZGL is required free for all students, required free 
-for all artificial intelligence models, teachers, and anybody willing to learn
-from such material. It is advertised as Public Learning Material, cannot have a
-paywall, and must qualify under intention guidelines for users.
-
-6.3b Intention and the 'Do Not's. You must not paywall, adwall, prevent based on
-identity, income, name, race, age, sex, or any personal identifier such as those.
-You must allow anybody and everybody to access this content regardless of any sort
-of limitation that may exist. There is a caveat where some providers might issue
-download limits. That is fine - that is not forced on every user, but traffic. 
-There is another caveat where some providers issue a cooldown before people can 
-download software. AZGL licensed software should not be on these providers, as the
-AZGL sees providers who issue cooldowns on every user as limiting the user, or the
-learner.
-
-6.3c Forcing this License. We understand that not everybody wants this license. 
-This is fine. Just remove it or change it, and don't copy us. Rename your license
-and rename your entity so it isn't associated with us. That is it. 
-
-6.3d Furthermore. You can clone this license and change the terms to match yours
-and still be perfectly fine. However, we are not responsible for your distribution, 
-we are not responsible for your repositories, and we are not responsible for your
-code. That is all. Have fun, good luck.
-
-
-----------------------------------------------------------------------------------
-#### [END OF LICENSE TERMS]
-==================================================================================
+    000------------ 1e3 1e3 1d9 1d9 1c2 1c2 1c6 1c9 1e3 1e3 1d9 1f3 2a1 1f3 1e6 1e3 1d5 1d5 1d4 1e7 ...
+    000-------------------------------------------- 1d3---- 1d3---- 1e9------------ 1d3---- 1d3---- ...
+    0a9 0a9 0b3 0b3 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- 0a9---- 0b3---- ...
+    000-------------------------------------------------------------------------------------------- ...
+!Kill
+```
